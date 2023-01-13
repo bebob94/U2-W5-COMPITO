@@ -82,7 +82,7 @@ main {
 #trending {
   display: flex;
   align-items: center;
-  margin-left: 2em;
+  margin-left: 4em;
   margin-bottom: 0;
 }
 #trending_img {
@@ -94,22 +94,20 @@ main {
   font-family: roboto, sans-serif;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .cards {
   display: block;
-  background-color: #ffc017;
-  margin: 2em;
+  margin: 3em;
   margin-top: 0;
-  width: 25em;
+  width: 20em;
 }
 .titlecard {
   display: flex;
   align-items: center;
 }
-.bodycard {
-  margin-left: 4em;
-}
+
 .cards h5 {
   font-size: 1.2em;
   margin: 0;
@@ -120,7 +118,6 @@ main {
 .cards img {
   border-radius: 50%;
   height: 20px;
-  display: inline;
 }
 
 .cards p {
