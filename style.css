@@ -22,7 +22,9 @@ nav {
   align-items: center;
   position: fixed;
   width: 100%;
+  animation: CambioColore 2s;
 }
+
 nav img {
   height: 0.8em;
   cursor: pointer;
@@ -54,6 +56,29 @@ a {
   padding: 1px 10px;
   margin: 0 0.5em;
   cursor: pointer;
+}
+
+header h2 {
+  padding-left: 40px;
+}
+nav ul {
+  display: flex;
+  list-style-type: none;
+  padding-right: 50px;
+}
+nav li {
+  padding: 0px 10px;
+  font-size: 0.8em;
+}
+.newColor nav ul li span {
+  animation: coloreVerde 2s;
+}
+@keyframes coloreVerde {
+  0% {
+  }
+  100% {
+    background-color: #1a8917;
+  }
 }
 
 h1 {
@@ -105,11 +130,14 @@ main {
   display: block;
   margin: 3em;
   margin-top: 0;
-  width: 20em;
+  width: 25%;
 }
 .titlecard {
   display: flex;
   align-items: center;
+}
+.cards div:not(:first-child) {
+  margin-left: 2em;
 }
 
 .cards h5 {
@@ -136,4 +164,82 @@ h6 {
 
 .cards div {
   margin: 0;
+}
+#secondArticle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+}
+.sezione {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+#secondArticle .sezione .secondcards {
+  align-self: stretch;
+}
+.secondcards h5 {
+  font-weight: 900;
+  font-size: 1.5em;
+}
+.sezione > img {
+  width: 250px;
+}
+.footerCards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sezioneDestra {
+  width: 30%;
+  position: relative;
+}
+
+aside {
+  width: 100%;
+  position: sticky;
+  top: 70px;
+}
+aside h6 {
+  padding: 10px 0;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+aside div {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+aside button {
+  background: none;
+  border: 1px solid lightgray;
+  color: gray;
+  padding: 10px 20px;
+  margin: 3px;
+}
+aside ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+aside ul li {
+  color: gray;
+  padding: 10px;
+}
+
+#secondArticle h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.sezioneDestra {
+  position: relative;
+  top: -91em;
+  right: -55em;
+  width: 30em;
 }
