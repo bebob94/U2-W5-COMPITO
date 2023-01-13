@@ -167,11 +167,16 @@ h6 {
 }
 #secondArticle {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 60%;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+#sezioneSinistra {
+  width: 49%;
 }
 .sezione {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -193,8 +198,8 @@ h6 {
 }
 
 .sezioneDestra {
-  width: 30%;
-  position: relative;
+  width: 25%;
+  margin-top: 1em;
 }
 
 aside {
@@ -235,11 +240,4 @@ h5,
 h6,
 p {
   margin: 0;
-}
-
-.sezioneDestra {
-  position: relative;
-  top: -91em;
-  right: -55em;
-  width: 30em;
 }
