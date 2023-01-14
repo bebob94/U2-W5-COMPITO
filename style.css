@@ -5,24 +5,21 @@ body {
 
 header {
   background-color: #ffc017;
-  height: 100%;
   font-family: spectral, serif;
   border-bottom: solid 1px #191919;
-}
-
-#logo {
-  margin-right: 20em;
+  width: 100%;
 }
 
 nav {
-  background-color: #ffc017;
   border-bottom: solid 1px black;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  position: fixed;
+  position: sticky;
+  top: 0;
+  background-color: #ffc017;
   width: 100%;
-  animation: CambioColore 2s;
+  z-index: 3;
 }
 
 nav img {
@@ -34,9 +31,8 @@ nav ul {
   display: flex;
   flex-direction: row;
   margin: 0.5em;
-  margin-left: 20em;
   list-style-type: none;
-  padding: 0;
+  padding: 0px;
 }
 nav li {
   margin: 0.5em;
@@ -61,25 +57,6 @@ a {
 header h2 {
   padding-left: 40px;
 }
-nav ul {
-  display: flex;
-  list-style-type: none;
-  padding-right: 50px;
-}
-nav li {
-  padding: 0px 10px;
-  font-size: 0.8em;
-}
-.newColor nav ul li span {
-  animation: coloreVerde 2s;
-}
-@keyframes coloreVerde {
-  0% {
-  }
-  100% {
-    background-color: #1a8917;
-  }
-}
 
 h1 {
   font-size: 4em;
@@ -94,14 +71,16 @@ h1 {
 }
 #container div {
   width: 50%;
-  margin: 3em 0 2em 5em;
+  margin: 2em 0 2em 5em;
 }
 
 #container p {
   width: 17em;
+  margin-top: 1em;
+  margin-bottom: 2em;
 }
 #container button {
-  margin: 1em 0;
+  margin: 2em 0;
   font-size: 10px;
   padding: 8px 40px;
 }
@@ -124,13 +103,14 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
 .cards {
-  display: block;
-  margin: 3em;
-  margin-top: 0;
-  width: 25%;
+  margin: 0;
+  margin-bottom: 5em;
+  height: 3em;
+  width: 30%;
 }
 .titlecard {
   display: flex;
@@ -198,7 +178,7 @@ h6 {
 }
 
 .sezioneDestra {
-  width: 25%;
+  width: 45%;
   margin-top: 1em;
 }
 

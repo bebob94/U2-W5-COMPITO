@@ -1,0 +1,18 @@
+@media screen and (max-width: 1000px) {
+  .cards {
+    width: 50%;
+  }
+  #secondArticle {
+    display: block;
+  }
+  .sezioneDestra {
+    width: 100%;
+  }
+  .sezioneSinistra {
+    width: 100%;
+  }
+}
+
+/* non capisco perchè non mi funzionano le media quary ne sullo stesso foglio css ne mettendole in questo altro foglio,
+ non trovo l'errore ma e da ieri,quando mi si e spento il pc con la schermata blue, 
+ che vscode funziona male, prettier non lavora più e non mi da i suggerimenti dei tag */
