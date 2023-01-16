@@ -28,9 +28,5 @@ const intervallo = setInterval(() => {
   }
 }, 40);
 
-const stop = () => {
-  clearInterval(intervallo);
-};
-
 intervallo();
 stop();
