@@ -124,6 +124,7 @@ main {
 .cards div:not(:first-child) {
   margin-left: 2em;
 }
+/* per isolare il numero in trasparenza */
 
 .cards h5 {
   font-size: 1.2em;
@@ -171,7 +172,7 @@ h6 {
   align-self: stretch;
 }
 .secondcards h5 {
-  font-weight: 900;
+  font-weight: 800;
   font-size: 1.5em;
 }
 .sezione > img {
